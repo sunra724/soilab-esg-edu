@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+dist/
+*.log
+*.tsbuildinfo
+.env*
+!.env.example
+
+# Local reference/bid documents are kept out of the public source repo.
+충남형 계약학과 온라인 ESG 분석,평가 교육 시스템 개발 용역/

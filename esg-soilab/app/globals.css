@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+:root {
+  --green-900: #1b4332;
+  --green-800: #2d6a4f;
+  --green-700: #255943;
+  --green-600: #40916c;
+  --green-400: #52b788;
+  --green-100: #d8f3dc;
+  --green-50: #f0faf3;
+
+  --terra-800: #b85030;
+  --terra-600: #c75b3a;
+  --terra-400: #e07a5f;
+  --terra-100: #faece7;
+  --terra-50: #fdf5f2;
+
+  --canvas: #f2f1ed;
+  --surface: #ebeae5;
+  --surface-2: #e3e2dc;
+  --ink: #26251e;
+  --ink-mid: #5a5850;
+  --ink-faint: #9a9890;
+  --border: rgba(38, 37, 30, 0.1);
+  --border-md: rgba(38, 37, 30, 0.18);
+  --shadow-soft: 0 18px 45px rgba(38, 37, 30, 0.08);
+  --shadow-lift: 0 16px 28px rgba(38, 37, 30, 0.11);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-mid: var(--ink-mid);
+  --color-ink-faint: var(--ink-faint);
+  --color-green-900: var(--green-900);
+  --color-green-800: var(--green-800);
+  --color-green-700: var(--green-700);
+  --color-green-600: var(--green-600);
+  --color-green-400: var(--green-400);
+  --color-green-100: var(--green-100);
+  --color-green-50: var(--green-50);
+  --color-terra-800: var(--terra-800);
+  --color-terra-600: var(--terra-600);
+  --color-terra-400: var(--terra-400);
+  --color-terra-100: var(--terra-100);
+  --color-terra-50: var(--terra-50);
+  --font-soilab-sans: var(--font-sans);
+  --font-soilab-serif: var(--font-serif);
+  --font-soilab-mono: var(--font-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-serif), serif;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+h1 {
+  font-size: clamp(2.3rem, 2.05rem + 1.05vw, 3.25rem);
+  line-height: 1.12;
+}
+
+h2 {
+  font-size: clamp(1.85rem, 1.72rem + 0.55vw, 2.25rem);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.45rem;
+  line-height: 1.3;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--green-100);
+  color: var(--green-900);
+}
+
+.focus-ring {
+  outline: 2px solid transparent;
+  outline-offset: 3px;
+}
+
+.focus-ring:focus-visible {
+  outline-color: var(--green-800);
+}
+
+.font-serif {
+  font-family: var(--font-serif), serif;
+}
+
+.font-mono {
+  font-family: var(--font-mono), monospace;
+}
+
+.ko-readable {
+  max-width: 46rem;
+  line-height: 1.78;
+  word-break: keep-all;
+}
+
+.animate-rise {
+  animation: rise 680ms ease both;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: var(--canvas);
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  .print-sheet {
+    margin: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+}
