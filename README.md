@@ -25,12 +25,12 @@ Vercel에서 이 GitHub 저장소를 import할 때:
 - Build Command: `npm run build`
 - Install Command: `npm install`
 
-도메인은 Vercel 프로젝트 Settings > Domains에서 `esg.soilabcoop.kr`를 추가한 뒤, Vercel이 안내하는 CNAME 값을 가비아 DNS에 등록합니다.
+도메인은 Vercel 프로젝트 Settings > Domains에서 `esg-edu.soilabcoop.kr`를 추가한 뒤, Vercel이 안내하는 CNAME 값을 가비아 DNS에 등록합니다.
 
 일반적으로 서브도메인 CNAME은 다음 형태입니다.
 
 ```text
-Host: esg
+Host: esg-edu
 Type: CNAME
 Value: cname.vercel-dns.com
 ```

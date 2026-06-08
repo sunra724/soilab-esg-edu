@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://esg.soilabcoop.kr/sitemap.xml",
+    sitemap: "https://esg-edu.soilabcoop.kr/sitemap.xml",
   };
 }

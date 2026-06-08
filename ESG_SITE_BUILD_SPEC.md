@@ -1,5 +1,5 @@
 # ESG_SITE_BUILD_SPEC.md
-> **esg.soilabcoop.kr** — 비전문가 친화형 ESG 분석·평가 교육 도구 데모/홍보 사이트
+> **esg-edu.soilabcoop.kr** — 비전문가 친화형 ESG 분석·평가 교육 도구 데모/홍보 사이트
 > VS Code + Codex 빌드 명세서 · 버전 0.1 · 2026.06
 > 협동조합 소이랩 (Soilab Cooperative)
 
@@ -25,7 +25,7 @@
 | 항목 | 내용 |
 |---|---|
 | 사이트명 | ESG 분석·평가 교육 실습 (소이랩) |
-| 도메인 | `esg.soilabcoop.kr` (soilabcoop.kr 서브도메인) |
+| 도메인 | `esg-edu.soilabcoop.kr` (soilabcoop.kr 서브도메인) |
 | 목적 | ① 소이랩이 개발한 비전문가용 ESG 교육 도구를 **홍보**, ② 방문자가 직접 **연습(데모 체험)** |
 | 타깃 | 대학(계약학과·교양), 공공기관 교육담당, 중소기업 ESG 입문자, 사업 파트너 |
 | 핵심 전환 | "직접 해보기(데모)" 체험 → "도입·협업 문의" 리드 확보 |
@@ -276,13 +276,13 @@ app/contact/page.tsx: 도입·협업 문의. 폼(이름/기관/이메일/문의�
 **Codex/수동 절차**
 ```
 1) GitHub 저장소 push → Vercel 새 프로젝트 import → 빌드 확인.
-2) Vercel 프로젝트 Settings > Domains 에 esg.soilabcoop.kr 추가.
+2) Vercel 프로젝트 Settings > Domains 에 esg-edu.soilabcoop.kr 추가.
 3) Vercel이 안내하는 DNS 레코드를 Gabia에 등록:
-   - 보통 CNAME: 호스트 'esg' → 값 'cname.vercel-dns.com' (Vercel 화면의 정확한 값 사용)
+   - 보통 CNAME: 호스트 'esg-edu' → 값 'cname.vercel-dns.com' (Vercel 화면의 정확한 값 사용)
    - 루트가 아닌 서브도메인이므로 CNAME 사용 가능.
 4) 전파 후 Vercel에서 도메인 'Valid' 확인, HTTPS 자동 발급 확인.
 ```
-**DoD**: `https://esg.soilabcoop.kr` 접속·HTTPS 정상, 데모 동작.
+**DoD**: `https://esg-edu.soilabcoop.kr` 접속·HTTPS 정상, 데모 동작.
 
 > Gabia DNS 화면과 Vercel 안내 값이 다를 수 있으니 **Vercel 대시보드에 표시되는 정확한 레코드**를 그대로 입력한다.
 
@@ -355,7 +355,7 @@ G: 이사회 인원, 사외이사, 여성이사, 이사회 개최(회), 윤리�
 - [ ] 데모: 입력→산정→보고서→PDF, 시나리오·JSON 저장/불러오기 동작
 - [ ] 모바일 반응형, 키보드 포커스, alt/label
 - [ ] 메타·OG·sitemap·robots, lang="ko"
-- [ ] esg.soilabcoop.kr HTTPS 정상, 면책(교육용·계수 갱신) 문구 노출
+- [ ] esg-edu.soilabcoop.kr HTTPS 정상, 면책(교육용·계수 갱신) 문구 노출
 
 ---
 

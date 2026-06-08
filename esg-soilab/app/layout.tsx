@@ -26,7 +26,7 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://esg.soilabcoop.kr"),
+  metadataBase: new URL("https://esg-edu.soilabcoop.kr"),
   title: {
     default: "ESG 분석·평가 교육 실습 | 소이랩",
     template: "%s | ESG 교육 실습",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ESG 분석·평가 교육 실습",
     description: "입력, 산정, 보고서 작성까지 한 흐름으로 배우는 소이랩 ESG 교육 도구",
-    url: "https://esg.soilabcoop.kr",
+    url: "https://esg-edu.soilabcoop.kr",
     siteName: "소이랩 ESG 교육 실습",
     locale: "ko_KR",
     type: "website",
